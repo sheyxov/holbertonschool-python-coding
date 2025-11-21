@@ -1,15 +1,19 @@
 #!/usr/bin/python3
 """
-Square that defines a square by: (based on 2-square.py)
+This module defines a Square class with private size attribute,
+getter and setter, and area computation.
 """
 
-
 class Square:
+    """
+    Represents a square with private size attribute.
+    """
+
     def __init__(self, size=0):
         """
         Initialize a new Square instance with optional size.
         """
-        self.size = size
+        self.size = size  # setter will validate
 
     @property
     def size(self):
